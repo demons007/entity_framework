@@ -1,0 +1,10 @@
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EmployeesDAL.dll.config
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EmployeesDAL.dll
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EmployeesDAL.pdb
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EntityFramework.dll
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EntityFramework.SqlServer.dll
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EntityFramework.xml
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\bin\Debug\EntityFramework.SqlServer.xml
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\obj\Debug\EmployeesDAL.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\obj\Debug\EmployeesDAL.dll
+c:\users\user\documents\visual studio 2015\Projects\webApiDemo\EmployeesDAL\obj\Debug\EmployeesDAL.pdb

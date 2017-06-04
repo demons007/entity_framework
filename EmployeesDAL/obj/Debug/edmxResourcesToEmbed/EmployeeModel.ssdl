@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="testModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'test.dbo.Department' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Department">
+    <Key>
+      <PropertyRef Name="DepartmentId" />
+      <PropertyRef Name="Name" />
+    </Key>
+    <Property Name="DepartmentId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'test.dbo.Employee' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Gender" />
+      <PropertyRef Name="City" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Gender" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="City" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="DepartmentId" Type="int" />
+  </EntityType>
+  <!--<EntityContainer Name="testModelStoreContainer">
+          <EntitySet Name="Department" EntityType="Self.Department" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Department].[DepartmentId] AS [DepartmentId], 
+    [Department].[Name] AS [Name]
+    FROM [dbo].[Department] AS [Department]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Employee" EntityType="Self.Employee" store:Type="Tables" store:Schema="dbo">
+            <DefiningQuery>SELECT 
+    [Employee].[Id] AS [Id], 
+    [Employee].[Name] AS [Name], 
+    [Employee].[Gender] AS [Gender], 
+    [Employee].[City] AS [City], 
+    [Employee].[DepartmentId] AS [DepartmentId]
+    FROM [dbo].[Employee] AS [Employee]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>-->
+  <EntityContainer Name="testModelStoreContainer">
+    <EntitySet Name="Employee" EntityType="Self.Employee" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Department" EntityType="Self.Department" store:Type="Tables" store:Schema="dbo" />
+  </EntityContainer>
+</Schema>
